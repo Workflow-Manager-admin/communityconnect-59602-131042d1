@@ -10,10 +10,10 @@ Injecting EditorRootWrapper import: ../.ve/EditorRootWrapper
 asset bundle.js 1.46 MiB [emitted] (name: main)
 asset index.html 1.98 KiB [emitted]
 runtime modules 27.5 KiB 14 modules
-cacheable modules 1.29 MiB
+cacheable modules 1.3 MiB
   modules by path ./node_modules/ 1.24 MiB 31 modules
-  modules by path ./src/ 41.6 KiB
-    modules by path ./src/components/ 30.1 KiB 12 modules
+  modules by path ./src/ 41.8 KiB
+    modules by path ./src/components/ 30.4 KiB 12 modules
     modules by path ./src/*.css 8 KiB 4 modules
     modules by path ./src/*.js 3.47 KiB
       ./src/index.js 530 bytes [built] [code generated]
@@ -22,14 +22,4 @@ cacheable modules 1.29 MiB
     modules by path ./.ve/*.js 10.6 KiB 2 modules
     modules by path ./.ve/*.css 2.93 KiB 2 modules
     ./.ve/EditorOverlay.jsx 1.58 KiB [built] [code generated]
-webpack 5.99.9 compiled successfully in 1307 ms
-assets by status 1.98 KiB [cached] 1 asset
-assets by path *.js 1.47 MiB
-  asset bundle.js 1.46 MiB [emitted] (name: main)
-  asset main.c6084b581213832bf1b1.hot-update.js 6.74 KiB [emitted] [immutable] [hmr] (name: main)
-asset main.c6084b581213832bf1b1.hot-update.json 28 bytes [emitted] [immutable] [hmr]
-Entrypoint main 1.47 MiB = bundle.js 1.46 MiB main.c6084b581213832bf1b1.hot-update.js 6.74 KiB
-cached modules 1.29 MiB [cached] 53 modules
-runtime modules 27.5 KiB 14 modules
-./src/components/NewsSection.js 3.85 KiB [built] [code generated]
-webpack 5.99.9 compiled successfully in 127 ms
+webpack 5.99.9 compiled successfully in 1377 ms
