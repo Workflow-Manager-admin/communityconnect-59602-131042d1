@@ -1,0 +1,63 @@
+.local-events h2 {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+.events-form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 13px;
+}
+
+.events-input {
+  border: 1.2px solid var(--border-color);
+  padding: 5px 8px;
+  border-radius: 3px;
+  background: #20202e;
+  color: var(--text-color);
+  flex: 1;
+}
+
+.events-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.events-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid var(--border-color);
+  padding: 7px 0 5px 0;
+  flex-wrap: wrap;
+}
+.event-title {
+  font-weight: 700;
+  color: var(--secondary-color);
+  margin-right: 6px;
+}
+.event-date {
+  color: var(--accent-color);
+  font-size: 0.97rem;
+  margin-right: 6px;
+}
+.event-desc {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  max-width: 49vw;
+  margin-right: 8px;
+}
+.events-delete {
+  background: transparent;
+  color: #aaa;
+  border: none;
+  font-size: 1em;
+  cursor: pointer;
+  padding: 0 6px;
+}
+.events-delete:hover {
+  background: var(--primary-color);
+  color: #fff;
+  border-radius: 4px;
+}

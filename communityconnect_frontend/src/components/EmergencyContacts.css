@@ -1,0 +1,52 @@
+.emergency-contacts h2 {
+  color: var(--accent-color);
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+.contacts-form {
+  display: flex;
+  gap: 7px;
+  margin-bottom: 10px;
+}
+.contacts-input {
+  border: 1.3px solid var(--border-color);
+  padding: 5px 8px;
+  background: #212127;
+  color: var(--text-color);
+  border-radius: 3px;
+  flex: 1;
+}
+.contacts-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 0;
+}
+.contacts-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 9px;
+  border-bottom: 1px solid var(--border-color);
+  padding: 6px 0 4px 0;
+}
+.contacts-number {
+  color: var(--secondary-color);
+  font-size: 1.07em;
+  text-decoration: none;
+  margin-left: 3px;
+  margin-right: 5px;
+}
+.contacts-delete {
+  background: transparent;
+  color: #aaa;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0 6px;
+}
+.contacts-delete:hover {
+  background: var(--primary-color);
+  color: #fff;
+  border-radius: 4px;
+}
