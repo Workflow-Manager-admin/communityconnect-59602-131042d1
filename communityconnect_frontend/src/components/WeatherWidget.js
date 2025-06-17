@@ -7,7 +7,8 @@ import './WeatherWidget.css';
  * City defaults to New York, can be changed by user.
  */
 function WeatherWidget() {
-  const WEATHER_API_KEY = '2124893c7773e28bf7ecb4f538dcd355';
+  // Using the required weather API key for all OpenWeatherMap API requests
+  const WEATHER_API_KEY = '762135b9d83533a745d83b7042c6e485';
   const [city, setCity] = useState(() => localStorage.getItem('cc-weather-city') || 'New York');
   const [weather, setWeather] = useState(null);
   const [input, setInput] = useState(city);
