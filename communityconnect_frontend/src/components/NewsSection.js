@@ -10,15 +10,19 @@ function NewsSection() {
   const [articles, setArticles] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  // Using NewsAPI.org with given API key
+  // Using NewsAPI.org with provided API key (always update via integration details!)
   const NEWS_API_KEY = '7eb021fdd0745282f9816f080ee0ab4d';
-  const NEWS_URL = `https://newsapi.org/v2/top-headlines?country=us&pageSize=6&apiKey=${NEWS_API_KEY}`;
+
+  // Helper to construct news API URL on every request (API key embedded)
+  const getNewsApiUrl = () =>
+    `https://newsapi.org/v2/top-headlines?country=us&pageSize=6&apiKey=${NEWS_API_KEY}`;
 
   useEffect(() => {
     const fetchNews = async () => {
       try {
         setLoading(true);
-        const res = await fetch(NEWS_URL);
+        // Always evaluate URL at fetch time to avoid stale/changed keys.
+        const res = await fetch(getNewsApiUrl());
         const data = await res.json();
         setArticles(data.articles || []);
       } catch (e) {
@@ -28,7 +32,7 @@ function NewsSection() {
       }
     };
     fetchNews();
-    // Optionally refresh news every 30 minutes
+    // Optionally refresh news every 30 minutes (to also refetch with potentially new API key)
     const interval = setInterval(fetchNews, 30 * 60 * 1000);
     return () => clearInterval(interval);
   }, []);
